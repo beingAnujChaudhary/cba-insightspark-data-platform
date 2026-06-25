@@ -1,0 +1,79 @@
+# ==========================================
+# 🏦 CBA InsightSpark Data Platform .gitignore
+# ==========================================
+
+# 🚨 1. DATA PRIVACY & SECURITY (CRITICAL FOR CBA)
+# Never commit raw PII, sensitive customer data, or large intermediate datasets.
+# We ignore the contents of the data folders, but keep the folders themselves using .gitkeep.
+data/raw/*
+data/anonymized/*
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.parquet
+data/**/*.db
+data/**/*.sqlite
+data/**/*.sqlite3
+
+# Keep the folder structure in Git using .gitkeep files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/anonymized/.gitkeep
+
+# 🔐 2. ENVIRONMENT VARIABLES & SECRETS
+# Never commit API keys, database passwords, or bearer tokens.
+.env
+.env.local
+.env.*.local
+secrets/
+credentials.json
+*.pem
+
+# 🐍 3. PYTHON & UV ENVIRONMENT
+# Ignore virtual environments and compiled Python files.
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+# NOTE: uv.lock SHOULD be committed to GitHub for reproducible environments!
+
+# 📓 4. JUPYTER NOTEBOOKS
+# Ignore Jupyter checkpoint files (temporary auto-saves).
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# 🖥️ 5. IDE & EDITORS
+# Ignore local IDE configuration files.
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# 🍏 6. OS GENERATED FILES
+# Ignore hidden OS files that clutter the repository.
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 📊 7. LOGS & TEMP FILES
+logs/
+*.log
+tmp/
+temp/

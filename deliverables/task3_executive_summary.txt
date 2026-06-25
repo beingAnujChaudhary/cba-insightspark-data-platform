@@ -1,0 +1,11 @@
+
+# @CommBank Twitter Intelligence Report
+**Date:** 2026-06-25
+**Total Tweets Analyzed:** 50
+
+## Key Findings:
+1. **Brand Sentiment:** 44.0% Positive, 0.0% Neutral, 56.0% Negative.
+2. **Top Discussed Product:** app (18 mentions).
+3. **Risk Alert:** Detected mentions of 'scam' and 'fraud'. Requires immediate cybersecurity review.
+
+*Data has been loaded into the InsightSpark Data Warehouse (Table: Tweets).*
