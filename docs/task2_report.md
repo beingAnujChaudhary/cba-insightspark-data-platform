@@ -2,7 +2,7 @@
 
 **Prepared for:** InsightSpark Data Science Team  
 **Author:** Anuj Chaudhary, Data Engineering  
-**Date:** October 2026  
+**Date:** 2026-06-25
 
 ## 1. Executive Summary
 This report details the data anonymization pipeline applied to the `mobile_customers` dataset. The objective was to strip Personally Identifiable Information (PII) to comply with data privacy regulations (e.g., Australian Privacy Principles) while preserving the statistical utility required for InsightSpark's downstream machine learning and analytical models.
